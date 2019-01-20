@@ -14,3 +14,12 @@ Presentational Components: https://medium.com/@dan_abramov/smart-and-dumb-compon
 
 ### Prop Types
 Used to document the React components.
+
+### Typescript React code snippets
+
+### ESLINT
+Helps to maintain a consistent JavaScript and React code style in the project.
+
+### webpack-dev-server
+Will launch your application inside a browser. Every time a file is saved after a modification, the webpack dev server will automatically refresh the browser’s window.
+
