@@ -1,5 +1,5 @@
 import React from 'react'
-import List from '../presentational/List'
+import List from '../presentational/List.jsx'
 
 const App = () => (
   <div className='row mt-5'>

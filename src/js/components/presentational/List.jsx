@@ -3,6 +3,7 @@
 
 import React from 'react'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 const mapStateToProps = state => {
   return { articles: state.articles }
@@ -17,6 +18,11 @@ const ConnectedList = ({ articles }) => (
     ))}
   </ul>
 )
+
+ConnectedList.propTypes = {
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired
+}
 
 // Connecting the stateless component ConnectedList with the Redux store.
 const List = connect(mapStateToProps)(ConnectedList)
