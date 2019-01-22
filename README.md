@@ -89,3 +89,6 @@ mapDispatchToProps connects Redux actions to React props. This way a connected R
 
 #### Provider
 Provider is an high order component coming from react-redux. Provider wraps up your React application and makes it aware of the entire Redux’s store.
+
+Provider wraps up your entire React application. Moreover it gets the store as a prop.
+
