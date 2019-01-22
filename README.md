@@ -92,3 +92,5 @@ Provider is an high order component coming from react-redux. Provider wraps up y
 
 Provider wraps up your entire React application. Moreover it gets the store as a prop.
 
+### UUID
+
