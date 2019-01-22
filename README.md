@@ -47,9 +47,14 @@ The most important concept here is that the state in redux comes from reducers. 
 
 A reducer is just a JavaScript function. A reducer takes two parameters: the current state and an action.
 
-In a tipical React component the local state changes in place with setState. In Redux you cannot do that. The third principle of Redux says that the state is immutable and cannot change in place.
+In a typical React component the local state changes in place with setState. In Redux you cannot do that. The third principle of Redux says that the state is immutable and cannot change in place.
 
 This is why the reducer must be pure. A pure function is one that returns the exact same output for the given input.
+
+It should return at least the initial state when no action type matches. When the action type matches a valid clause the reducer calculates the next state and returns a new object.
+
+##### combineReducers
+The reducer will grow as the app will become bigger. A tip is to split a big reducer into separate functions and combine them with combineReducers.
 
 #### Actions
 How does a reducer know when to produce the next state?
@@ -60,4 +65,13 @@ Redux actions are nothing more than JavaScript objects. Every action needs a typ
 
 ##### Constants
 The type property is nothing more than a string. The reducer will use that string to determine how to calculate the next state. Since strings are prone to typos and duplicates it’s better to have action types declared as constants.This approach helps avoiding errors that will be difficult to debug.
+
+#### Avoiding mutations in Redux
+1. Using concat(), slice(), and …spread for arrays
+2. Using Object.assign() and …spread for objects
+
+#### Redux API
+1. getState for accessing the current state of the application
+2. dispatch for dispatching an action
+3. subscribe for listening on state changes
 
