@@ -73,5 +73,19 @@ The type property is nothing more than a string. The reducer will use that strin
 #### Redux API
 1. getState for accessing the current state of the application
 2. dispatch for dispatching an action
-3. subscribe for listening on state changes
+3. subscribe for listening on state changes (already implemented observer pattern?)
 
+### React-redux
+react-redux is a Redux binding for React. It’s a small library for connecting Redux and React in an efficient way.
+
+#### Connect
+A method that connects a React component with the Redux store.
+
+##### mapStateToProps
+Connects a part of the Redux state to the props of a React component. By doing so a connected React component will have access to the exact part of the store it needs.
+
+##### mapDispatchToProps
+mapDispatchToProps connects Redux actions to React props. This way a connected React component will be able to dispatch actions.
+
+#### Provider
+Provider is an high order component coming from react-redux. Provider wraps up your React application and makes it aware of the entire Redux’s store.

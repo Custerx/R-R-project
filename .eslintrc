@@ -13,7 +13,7 @@
         "react/jsx-uses-vars": "error",
         "max-len": [1, 120, 2, {"ignoreComments": true}]
     },
-    "extends": ["eslint:recommended", "plugin:react/recommended"]
+    "extends": ["plugin:react/recommended"]
     ,
     "env": {
         "browser": true,
