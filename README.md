@@ -93,4 +93,18 @@ Provider is an high order component coming from react-redux. Provider wraps up y
 Provider wraps up your entire React application. Moreover it gets the store as a prop.
 
 ### UUID
+Simple, fast generation of RFC4122 UUIDS.
+
+### Redux Middleware
+A Redux middleware is a function that is able to intercept, and act accordingly, our actions, before they reach the reducer.
+
+In its basic form a Redux middleware is a function returning a function, which takes next as a parameter. Then the inner function returns another function which takes action as a parameter and finally returns next(action).
+
+Middlewares in Redux are super important because they will hold the bulk of your application’s logic. If you think about it there is no better place than a middleware for abstracting away business logic. And the nice thing is that while inside the middleware you can access getState and dispatch.
+
+#### Redux middleware benefits
+1. The logic can live outside React (or any other library/framework)
+2. Middlewares become reusable pieces of logic, easily to reason about
+3. Middlewares can be tested in isolation
+4. Keep the components clean
 
