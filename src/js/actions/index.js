@@ -4,6 +4,6 @@ export function addArticle (payload) {
   return { type: ADD_ARTICLE, payload }
 }
 
-export function foundBadWord () {
-  return { type: FOUND_BAD_WORD }
+export function foundBadWord (payload) {
+  return { type: FOUND_BAD_WORD, payload }
 }

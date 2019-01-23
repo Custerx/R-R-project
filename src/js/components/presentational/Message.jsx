@@ -6,9 +6,9 @@ const mapStateToProps = state => {
 }
 
 const ConnectedMessage = ({ message }) => (
-  <h3>
+  <h4>
     {message}
-  </h3>
+  </h4>
 )
 
 // Connecting the stateless component ConnectedMessage with the Redux store.

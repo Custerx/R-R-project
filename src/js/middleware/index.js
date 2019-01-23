@@ -12,7 +12,7 @@ export function forbiddenWordsMiddleware ({ dispatch }) {
           action.payload.title.includes(word)
         )
         if (foundWord.length) {
-          return dispatch(foundBadWord)
+          return dispatch(foundBadWord(action))
         }
       }
       // -- End of middleware logic --
