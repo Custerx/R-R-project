@@ -108,3 +108,8 @@ Middlewares in Redux are super important because they will hold the bulk of your
 3. Middlewares can be tested in isolation
 4. Keep the components clean
 
+### Redux Thunk
+Calling fetch from an action creator does not work. That’s because Redux is expecting objects as actions but we’re trying to return a Promise. With redux-thunk we can overcome the problem and return functions from action creators.
+
+## Testing
+### Jest
