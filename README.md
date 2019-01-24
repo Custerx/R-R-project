@@ -111,5 +111,10 @@ Middlewares in Redux are super important because they will hold the bulk of your
 ### Redux Thunk
 Calling fetch from an action creator does not work. That’s because Redux is expecting objects as actions but we’re trying to return a Promise. With redux-thunk we can overcome the problem and return functions from action creators.
 
+Redux-thunk is a nice middleware that works very well for simpler use cases. But if your asynchronous logic involves more complex scenarios then redux saga might be a better fit.
+
+### Redux Saga
+
+
 ## Testing
 ### Jest
